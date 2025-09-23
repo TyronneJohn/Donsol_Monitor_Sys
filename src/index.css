@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-bg: 248 250 252; /* slate-50 */
+    --color-card: 255 255 255; /* white */
+    --color-border: 226 232 240; /* slate-200 */
+    --color-text: 17 24 39; /* gray-900 */
+    --color-muted: 75 85 99; /* gray-600 */
+    --color-primary: 79 70 229; /* indigo-600 */
+    --color-primary-foreground: 255 255 255;
+  }
+
+  html, body, #root {
+    @apply min-h-screen text-[rgb(var(--color-text))] text-[17px] md:text-[18px] lg:text-[19px] leading-7;
+    background-color: rgb(var(--color-bg));
+    background-image:
+      radial-gradient(1000px 1000px at 0% 0%, rgb(var(--color-primary) / 0.06), transparent 45%),
+      radial-gradient(700px 700px at 100% 20%, rgb(15 23 42 / 0.04), transparent 40%);
+    background-attachment: fixed;
+  }
+
+  a {
+    @apply text-[rgb(var(--color-primary))];
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-lg border border-[rgb(var(--color-border))] bg-[rgb(var(--color-card))] shadow-sm;
+  }
+  .muted {
+    @apply text-[rgb(var(--color-muted))];
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-md bg-[rgb(var(--color-primary))] px-4 py-2.5 text-base font-medium text-[rgb(var(--color-primary-foreground))] hover:opacity-90;
+  }
+}
