@@ -1,0 +1,3 @@
+- [x] Rename component in Legislative.jsx to Legislative
+- [x] Rename component in Executive.jsx to Executive
+- [x] Rename component in Barangays.jsx to Barangays
