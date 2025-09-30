@@ -1,5 +1,3 @@
-// Navbar.jsx
-// eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion'
 import { Link, NavLink } from 'react-router-dom'
 import { useState } from 'react'
@@ -12,8 +10,6 @@ function Navbar() {
     <header className="sticky top-0 z-50 border-b border-slate-200 bg-gradient-to-r from-[#0057A0] to-[#003c73] backdrop-blur shadow-lg">
       <div className="w-full px-4 lg:px-8">
         <div className="flex items-center justify-between h-20 gap-6">
-          
-          {/* Logo + Text */}
           <Link to="/" className="flex items-center gap-3">
             <motion.img 
               src={logo} 
@@ -29,8 +25,6 @@ function Navbar() {
               </span>
             </div>
           </Link>
-
-          {/* NAVIGATION PAGES */}
           <nav className="hidden md:flex items-center gap-7">
             <NavLink 
               to="/" 
@@ -39,7 +33,6 @@ function Navbar() {
               Home
             </NavLink>
 
-            {/* ABOUT US DROPDOWN */}
             <div 
               className="relative" 
               tabIndex="0" 
@@ -67,7 +60,6 @@ function Navbar() {
                   className="absolute left-0 mt-2 w-[500px] lg:w-[700px] rounded-xl border border-slate-200 bg-white p-4 shadow-lg"
                 >
                   <ul className="grid gap-4 md:grid-cols-[1.5fr_2fr]">
-                    {/* Featured Card (Left) */}
                     <li className="row-span-4">
                       <NavLink 
                         to="/about/profile"
@@ -80,7 +72,6 @@ function Navbar() {
                       </NavLink>
                     </li>
 
-                    {/* Grid Links (Right) */}
                     <li>
                       <NavLink 
                         to="/about/executive" 
@@ -125,7 +116,6 @@ function Navbar() {
             <NavLink to="/feedback" className="px-2 py-1 text-white hover:text-yellow-400 transition">Feedback</NavLink>
           </nav>
 
-          {/* LOGIN BUTTON ONLY */}
           <div className="hidden md:flex items-center gap-3">
             <NavLink 
               to="/login" 

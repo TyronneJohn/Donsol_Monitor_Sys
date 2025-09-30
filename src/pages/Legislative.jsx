@@ -1,4 +1,3 @@
-// src/pages/Legislative.jsx
 function Legislative() {
   return (
     <div className="p-6 max-w-6xl mx-auto">

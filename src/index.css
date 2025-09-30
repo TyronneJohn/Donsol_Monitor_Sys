@@ -4,12 +4,12 @@
 
 @layer base {
   :root {
-    --color-bg: 248 250 252; /* slate-50 */
-    --color-card: 255 255 255; /* white */
-    --color-border: 226 232 240; /* slate-200 */
-    --color-text: 17 24 39; /* gray-900 */
-    --color-muted: 75 85 99; /* gray-600 */
-    --color-primary: 79 70 229; /* indigo-600 */
+    --color-bg: 248 250 252; 
+    --color-card: 255 255 255; 
+    --color-border: 226 232 240; 
+    --color-text: 17 24 39; 
+    --color-muted: 75 85 99; 
+    --color-primary: 79 70 229;
     --color-primary-foreground: 255 255 255;
   }
 

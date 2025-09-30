@@ -1,7 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
-
-// Pages
 import Home from './pages/Home'
 import About from './pages/About'
 import ProjectsEvents from './pages/ProjectsEvents'
@@ -35,8 +33,6 @@ function App() {
           </Routes>
         </div>
       </main>
-
-      {/* Global Footer */}
       <footer className="bg-gray-100 text-gray-500 text-sm py-4 text-center">
         © 2025 Municipality of Donsol. All Rights Reserved.
       </footer>

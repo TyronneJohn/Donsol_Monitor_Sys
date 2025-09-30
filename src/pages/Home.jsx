@@ -1,23 +1,20 @@
 import { motion } from "framer-motion";
 
 function Home() {
-  // Section fade-up animation
   const fadeUp = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
   };
 
-  // Container for staggered children
   const staggerContainer = {
     hidden: {},
     visible: {
       transition: {
-        staggerChildren: 0.2, // Delay between children animations
+        staggerChildren: 0.2,
       },
     },
   };
 
-  // Card animation
   const cardVariant = {
     hidden: { opacity: 0, y: 30 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
@@ -25,13 +22,12 @@ function Home() {
 
   return (
     <>
-      {/* Hero Section */}
       <motion.section
         className="flex flex-col items-center justify-center text-center px-4 pt-12 pb-12"
         variants={fadeUp}
         initial="hidden"
         whileInView="visible"
-        viewport={{ amount: 0.3 }} // Animates every scroll
+        viewport={{ amount: 0.3 }}
       >
         <h1 className="text-4xl md:text-5xl font-bold text-slate-800 mb-4">
           Track. Monitor. Engage.
@@ -52,8 +48,6 @@ function Home() {
         </div>
       </motion.section>
 
-
-      {/* How It Works Section */}
       <motion.section
         className="px-4 py-16 text-center"
         variants={fadeUp}
@@ -81,7 +75,6 @@ function Home() {
         </div>
       </motion.section>
 
-      {/* Goals Section */}
       <motion.section
         className="px-4 py-16 bg-gray-50 text-center"
         variants={fadeUp}
@@ -117,7 +110,6 @@ function Home() {
         </motion.div>
       </motion.section>
 
-      {/* General Services Section */}
       <motion.section
         className="px-4 py-16 text-center"
         variants={fadeUp}
